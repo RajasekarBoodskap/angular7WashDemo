@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-9 col-md-7 col-sm-6 leftContent" style="height: 984px;">
+          <div>
+
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-5 col-sm-6 rightContent" style="height: 984px;">
+
+          <div class="loginBox">
+              <div class="text-sm-center mb-5">
+                  <img src="/assets/images/boodskap/bdskap-logo-2.png" height="60"/>
+              </div>
+
+              <form class="form-horizontal form-label-left input_mask el_input_mask ng-pristine ng-valid" (submit) = "loginUser($event)">
+                  <div class="form-group mb-4">
+                      <label>Username</label>
+                      <input type="text" class="form-control form-control-lg" id="username" placeholder="" required/>
+                  </div>
+                  <div class="form-group mb-4">
+                      <label>Password</label>
+                      <input type="password" class="form-control form-control-lg" id="password" placeholder=""
+                             required/>
+                  </div>
+                  <div class="form-group mb-5">
+                      <button type="submit" class="btn btn-danger btn-block btn-lg" id="submitButton">Sign me in
+                      </button>
+                  </div>
+                  <p class="text-sm-center mt-3">
+                      <small style="font-size: 11px">&copy; <span class="currentYear"></span> All rights reserved.
+                      </small>
+                      <a href="https://boodskap.io" target="_blank" class="text-info poweredBy"><img
+                              src="/assets/images/boodskap/powered-by-boodskap.png" height="25"/></a>
+                  </p>
+              </form>
+
+         
+
+          </div>
+
+      </div>
+  </div>
+</div>
