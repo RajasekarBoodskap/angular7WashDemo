@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule,  NbSidebarModule, NbSidebarService} from '@nebular/theme';
+import { CookieService } from 'ngx-cookie-service';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
@@ -35,7 +36,7 @@ import { WashComponent } from './pages/wash/wash.component';
     NbSidebarModule
     
   ],
-  providers: [NbSidebarService],
+  providers: [NbSidebarService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

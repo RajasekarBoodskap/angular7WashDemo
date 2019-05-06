@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="headerBar">
-    <span class="barmenu" ng-click="openNav()"><i class="fas fa-bars"></i></span>
+    <span class="barmenu" (click) = "openNav()"><i class="fas fa-bars"></i></span>
   
-    <a class="navbar-brand" href="javascript:void(0)" ng-click="openNav()">
+    <a class="navbar-brand" href="javascript:void(0)" (click) = "openNav()">
         <img class="logo" src="assets/images/logo.png" height="30">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
                     <img src="" class="user_profile_picture" height="32" />
-                    <span class="user_profile_name"></span>
+                    <span class="user_profile_name">{{ prifile_name }}</span>
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="javascript:void(0)" ng-click="logout()"> Logout</a></li>
