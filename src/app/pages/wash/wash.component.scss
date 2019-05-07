@@ -1,0 +1,10 @@
+@import '../../@theme/styles/themes';
+
+:host {
+
+  background: nb-theme(card-bg); // and use it
+}
+
+nb-card {
+    transform: translate3d(0, 0, 0);
+  }
